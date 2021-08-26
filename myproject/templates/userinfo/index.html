@@ -1,0 +1,56 @@
+{% extends 'base.html' %} {% block content %}
+<!DOCTYPE html>
+<html lang="ru">
+  <style>
+    body {
+      color: rgb(0, 0, 255);
+    }
+    h1 {
+      color: rgb(0, 0, 255);
+    }
+    p {
+      color: rgb(0, 0, 255);
+    }
+  </style>
+  <h1>Get IT</h1>
+  <p style="font-size: 21;">Мы можем помочь с преобразованием вашего бизнеса. Чтобы добиться максимальной производительности, наши многопрофильные команды объединяют бизнес-знания с дизайнерским мышлением, проектированием мирового уровня, современными операционными технологиями и пониманием ведущих инструментов и фреймворков.</p>
+  <h1>IT Fight Club</h1>
+  <body>
+    <img
+      src="https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg"
+      width="1600"
+      height="800"
+    />
+    <h2>
+      Get IT - платформа которая поможет обрести вебсайт и приложение для вашего
+      бизнеса!
+    </h2>
+    <img src="http://www.web-grand.com/wp-content/uploads/2018/12/chto-takoe-landing-page-i-kakim-on-dolzhen-byt.png"  width="1600"
+    height="800" >
+    <br>
+    <h3>
+      Можно заказать свой сайт под свой дизайн и интересы или же приобрести
+      готовый по приемлимой цене!
+    </h3>
+    <img src="https://amplificadigital.com.br/wp-content/uploads/2019/12/amplifica_banner_blog_landingpage.jpg" width="1600"
+    height="800">
+
+    <form method="POST">
+      <h4>Оставьте свои контактные данные</h4> {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Save</button>
+    </form>
+
+    <p>
+      <h4>Или напишите нам</h4>
+      <br />
+      Tel: <span itemprop="telephone">+996 312 500125</span> <br />
+      Email:
+      <a href="mailto:info@finedesign.com" itemprop="email"
+        >contactus@getit.com</a
+      >
+      <br />
+      Instagram <a href="#" itemprop="instagram">@GetIT.kgz</a>
+    </p>
+  </body>
+</html>
+{% endblock %}
